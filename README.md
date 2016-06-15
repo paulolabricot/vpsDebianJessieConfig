@@ -201,6 +201,19 @@ On redémarre le service :
 
 	service fail2ban restart
 
+### Amavisd-new, SpamAssassin et Clamav
+On installe **Amavisd-new, SpamAssassin et Clamav**
+
+	apt-get install amavisd-new spamassassin clamav clamav-daemon zoo unzip bzip2 arj nomarch lzop cabextract apt-listchanges libnet-ldap-perl libauthen-sasl-perl clamav-docs daemon libio-string-perl libio-socket-ssl-perl libnet-ident-perl zip libnet-dns-perl
+
+On configure clamav :
+
+	nano /etc/clamav/clamd.conf
+
+On modifie/ajoute la ligne suivante :
+
+	AllowSupplementaryGroups true
+
 ----------
 
 
