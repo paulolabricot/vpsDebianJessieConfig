@@ -135,6 +135,10 @@ On crée le fichier **/etc/init.d/firewall**. et on met le code suivant :
 	# FTP 
 	iptables -t filter -A OUTPUT -p tcp --dport 20:21 -j ACCEPT 
 	iptables -t filter -A INPUT -p tcp --dport 20:21 -j ACCEPT 
+	
+	# RSYNC
+	iptables -t filter -A INPUT -p tcp --dport 873 -m state --state NEW,ESTABLISHED -j ACCEPT
+	iptables -t filter -A OUTPUT -p tcp --dport 873 -m state --state NEW,ESTABLISHED -j ACCEPT
 	      
 	# Mail SMTP 
 	iptables -t filter -A INPUT -p tcp --dport 25 -j ACCEPT 
