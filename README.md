@@ -136,6 +136,10 @@ On crée le fichier **/etc/init.d/firewall**. et on met le code suivant :
 	iptables -t filter -A OUTPUT -p tcp --dport 20:21 -j ACCEPT 
 	iptables -t filter -A INPUT -p tcp --dport 20:21 -j ACCEPT 
 	
+	# MySQL
+	iptables -A INPUT -p tcp -s IP_DU_SERVEUR_AUTORISE --dport 3306 -j ACCEPT
+	iptables -A INPUT -p tcp --dport 3306 -j DROP
+	
 	# RSYNC
 	iptables -t filter -A INPUT -p tcp --dport 873 -m state --state NEW,ESTABLISHED -j ACCEPT
 	iptables -t filter -A OUTPUT -p tcp --dport 873 -m state --state NEW,ESTABLISHED -j ACCEPT
