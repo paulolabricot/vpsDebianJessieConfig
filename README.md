@@ -12,6 +12,9 @@
     apt-get update
     apt-get upgrade
 
+### Mise à jour de la zone géographique (si besoin)
+    dpkg-reconfigure tzdata
+
 ### Installation d'un éditeur de texte
 	apt-get install nano
 
