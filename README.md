@@ -349,3 +349,28 @@ On installe :
 
 	apt-get install git
 
+
+### Java
+On crée le sources.list pour java :
+
+	nano /etc/apt/sources.list.d/java-8-debian.list
+
+On ajoute les lignes suivante :
+
+	deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main
+	deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main
+
+On ajoute la clé du repository :
+
+	apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
+
+On met à jour les repositories et on installe java :
+
+	apt-get update
+	apt-get install oracle-java8-installer
+
+On vérifie la version de java installée :
+
+	javac -version
+
+
