@@ -50,6 +50,8 @@ Puis pour passer en root
 	mkdir -p /home/USERNAME/.ssh
 	chown USERNAME:USERNAME /home/USERNAME/.ssh
 	chmod 700 /home/USERNAME/.ssh
+	touch /home/USERNAME/.ssh/authorized_keys
+	chmod 600 /home/USERNAME/.ssh/authorized_keys
 
 **Sur le client**
 
