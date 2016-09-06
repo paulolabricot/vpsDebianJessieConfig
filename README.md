@@ -111,8 +111,8 @@ On crée le fichier **/etc/init.d/firewall**. et on met le code suivant :
 	iptables -t filter -A OUTPUT -p icmp -j ACCEPT 
 	    
 	# SSH
-	iptables -t filter -A INPUT -p tcp --dport 6548 -j ACCEPT    # Attention, si vous avez changé le port SSH dans le fichier /etc/ssh/sshd_config
-	iptables -t filter -A OUTPUT -p tcp --dport 6548 -j ACCEPT 
+	iptables -t filter -A INPUT -p tcp --dport 22 -j ACCEPT    # Attention, si vous avez changé le port SSH dans le fichier /etc/ssh/sshd_config
+	iptables -t filter -A OUTPUT -p tcp --dport 22 -j ACCEPT 
 	     
 	# DNS
 	iptables -t filter -A OUTPUT -p tcp --dport 53 -j ACCEPT 
