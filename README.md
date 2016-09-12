@@ -285,11 +285,11 @@ On modifie les lignes avec la configuration suivante :
 	post_max_size = 20M
 
 	;Activation de l'UTF-8 par défaut
-	mbstring.language=UTF-8
-	mbstring.internal_encoding=UTF-8
-	mbstring.http_input=UTF-8
-	mbstring.http_output=UTF-8
-	mbstring.detect_order=auto
+	mbstring.language = UTF-8
+	mbstring.internal_encoding = UTF-8
+	mbstring.http_input = UTF-8
+	mbstring.http_output = UTF-8
+	mbstring.detect_order = auto
 
 On active la réécriture
 
@@ -319,7 +319,7 @@ On modifie les paramètres suivants :
 
 	[client]
 	port = NOUVEAU_PORT_MYSQL
-	default-character-set=utf8
+	default-character-set = utf8
 	
 	[mysqld]
 	port = NOUVEAU_PORT_MYSQL
