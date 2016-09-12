@@ -291,6 +291,10 @@ On modifie les lignes avec la configuration suivante :
 	mbstring.http_output=UTF-8
 	mbstring.detect_order=auto
 
+On active la réécriture
+
+	a2enmod rewrite
+
 On redémarre apache
 
 	service apache2 restart
