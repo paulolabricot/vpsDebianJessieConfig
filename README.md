@@ -19,7 +19,7 @@
 	apt-get install nano
 
 ### Création nouvel utilisateur
-	useradd -m USERNAME
+	useradd -m -s /bin/bash USERNAME
 	passwd USERNAME
 
 ### Configuration SSH
@@ -51,6 +51,7 @@ Puis pour passer en root
 	chown USERNAME:USERNAME /home/USERNAME/.ssh
 	chmod 700 /home/USERNAME/.ssh
 	touch /home/USERNAME/.ssh/authorized_keys
+	chown USERNAME:USERNAME /home/USERNAME/.ssh/authorized_keys
 	chmod 600 /home/USERNAME/.ssh/authorized_keys
 
 **Sur le client**
