@@ -69,7 +69,7 @@ Puis pour passer en root
 	
 On ajoute la ligne suivante :
 
-	eval `keychain --eval --agents ssh id_rsa`
+	eval `keychain --eval --agents ssh SSH_KEY_NAME`
 
 **Copie de la clé sur le serveur**
 
