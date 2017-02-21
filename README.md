@@ -57,7 +57,19 @@ Puis pour passer en root
 **Sur le client**
 
 	ssh-keygen -t rsa
+	
+***Mac OS***
+
 	ssh-add -K ~/.ssh/SSH_KEY_NAME
+
+***Debian***
+
+	apt-get install keychain
+	nano /home/USERNAME/.bashrc
+	
+On ajoute la ligne suivante :
+
+	eval `keychain --eval --agents ssh id_rsa`
 
 **Copie de la clé sur le serveur**
 
