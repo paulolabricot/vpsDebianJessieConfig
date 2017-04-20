@@ -1,8 +1,13 @@
 # Configuration VPS Debian 8
 
-## Installation serveur
+# Table des matières
+  * [1 Installation serveur](#installation-serveur)
+  * [1.1 Connexion serveur](#connexion-serveur)
+  * [2 Connexion serveur](#serveur-web)
 
-### Connexion au serveur
+## 1 Installation serveur <a id="installation-serveur"></a>
+
+### 1.1 Connexion au serveur <a id="connexion-serveur"></a>
 	ssh root@SERVER_NAME
    
 ### Modification du mot de passe **root**
@@ -269,7 +274,7 @@ On redémarre le service
 ### CuRL
 	apt-get install curl
 
-## Serveur Web
+## Serveur Web <a id="serveur-web"></a>
 
 ### Apache
 	apt-get install apache2 apache2-utils
